@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EVVEEN — Video Editor</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --page: #111114;
+      --card: #1b1b20;
+      --accent: #ad93ff;
+      --text: #f3f1f6;
+      --muted: #a9a7b0;
+      --border: #303037;
+    }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; width: 100%; font-family: 'DM Sans', sans-serif; color: var(--text); }
+    * { box-sizing: border-box; }
+    a { text-decoration: none; }
+    a:focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; border-radius: 3px; }
+    .site-width { width: min(100% - 48px, 1180px); margin-inline: auto; }
+    .nav-link, .quiet-link, .video-link, .contact-link { transition: color .2s ease; }
+    .nav-link:hover, .quiet-link:hover, .video-link:hover, .contact-link:hover { color: #d1c3ff !important; }
+    .primary-link { transition: background .2s ease, transform .2s ease; }
+    .primary-link:hover { background: #c1afff !important; transform: translateY(-2px); }
+    .project-card, .service-card { transition: border-color .2s ease, transform .2s ease; }
+    .project-card:hover, .service-card:hover { border-color: #555063; transform: translateY(-3px); }
+    .thumbnail { aspect-ratio: 16 / 9; background: #292830; }
+    .section-space { padding-block: 104px; }
+    @media (max-width: 767px) {
+      .site-width { width: min(100% - 36px, 1180px); }
+      .section-space { padding-block: 72px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition-duration: .01ms !important; }
+    }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.577.0/dist/umd/lucide.min.js" type="text/javascript"></script>
+  <script src="https://cdn.tailwindcss.com/3.4.17" type="text/javascript"></script>
+  
+  
+  
+ </head>
+ <body data-template-id="__page-root" class="w-full min-h-screen" style="background: rgb(17, 17, 20);">
+  <header class="w-full border-b border-[#303037]">
+   <div class="site-width flex flex-wrap items-center justify-between gap-5 py-6"><a data-template-id="header-wordmark" class="canva-link font-bold tracking-[.18em]" href="#top" style="color: rgb(243, 241, 246); font-weight: 700; font-style: normal; font-size: 16px;">EVVEEN</a>
+    <nav aria-label="Main navigation" class="flex items-center gap-6 sm:gap-9"><a data-template-id="nav-work" class="canva-link nav-link" href="#work" style="color: rgb(169, 167, 176); font-weight: 400; font-style: normal; font-size: 16px;">Work</a> <a data-template-id="nav-about" class="canva-link nav-link" href="#about" style="color: rgb(169, 167, 176); font-weight: 400; font-style: normal; font-size: 16px;">About</a> <a data-template-id="nav-contact" class="canva-link nav-link" href="#contact" style="color: rgb(169, 167, 176); font-weight: 400; font-style: normal; font-size: 16px;">Contact</a>
+    </nav>
+   </div>
+  </header>
+  <main id="top">
+   <section class="site-width flex min-h-[480px] flex-col justify-center py-24 md:min-h-[610px]">
+    <h1 data-template-id="hero-title" class="canva-text max-w-[850px] font-bold leading-[1.09] tracking-[-.055em]" style="color: rgb(243, 241, 246); font-weight: 700; font-style: normal; font-size: 64px;">Video Editor for Creators &amp; Brands</h1>
+    <p data-template-id="hero-subtitle" class="canva-text mt-7 max-w-[590px] leading-relaxed" style="color: rgb(169, 167, 176); font-weight: 400; font-style: normal; font-size: 20px;">Gaming videos, engaging short-form edits, and long-form storytelling.</p>
+    <div class="mt-10 flex flex-wrap items-center gap-7"><a data-template-id="hero-work-link" class="canva-button primary-link inline-flex min-h-12 items-center justify-center rounded-xl px-6 font-bold" href="#work" style="background: rgb(173, 147, 255); color: rgb(17, 17, 20); font-weight: 700; font-style: normal; font-size: 16px;">View my work</a> <a data-template-id="hero-contact-link" class="canva-link quiet-link py-2 font-medium" href="#contact" style="color: rgb(243, 241, 246); font-weight: 500; font-style: normal; font-size: 16px;">Get in touch ↗</a>
+    </div>
+   </section>
+   <section id="about" class="section-space border-t border-[#303037]">
+    <div class="site-width grid gap-7 md:grid-cols-[1fr_2fr] md:gap-16">
+     <h2 data-template-id="about-heading" class="canva-text font-bold tracking-[-.035em]" style="color: rgb(243, 241, 246); font-weight: 700; font-style: normal; font-size: 24px;">About</h2>
+     <p data-template-id="about-copy" class="canva-text max-w-[750px] leading-[1.75]" style="color: rgb(198, 195, 205); font-weight: 400; font-style: normal; font-size: 20px;">I'm Evveen, a video editor focused on helping creators turn footage into engaging content. I edit gaming videos, YouTube content, and short-form videos for TikTok, Reels and Shorts.</p>
+    </div>
+   </section>
+   <section id="work" class="section-space border-t border-[#303037]">
+    <div class="site-width">
+     <h2 data-template-id="work-heading" class="canva-text mb-10 font-bold tracking-[-.035em]" style="color: rgb(243, 241, 246); font-weight: 700; font-style: normal; font-size: 24px;">Selected Work</h2>
+     <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+      <article data-template-id="project-card-1" class="canva-card project-card overflow-hidden rounded-2xl border border-[#303037]" style="background: rgb(27, 27, 32);"><img data-template-id="project-image-1" class="canva-image thumbnail block w-full object-cover" loading="lazy" src="https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="Computer screen and creative workspace placeholder for long-form YouTube edit">
+       <div class="p-5">
+        <h3 data-template-id="project-title-1" class="canva-text font-semibold" style="color: rgb(243, 241, 246); font-weight: 600; font-style: normal; font-size: 19px;">Long-form YouTube edit</h3><a data-template-id="project-link-1" class="canva-link video-link mt-4 inline-block font-medium" href="https://www.youtube.com/watch?v=YdWhBFtZuIc" target="_blank" rel="noopener noreferrer" style="color: rgb(173, 147, 255); font-weight: 500; font-style: normal; font-size: 16px;">View video</a>
+       </div>
+      </article>
+      <article data-template-id="project-card-2" class="canva-card project-card overflow-hidden rounded-2xl border border-[#303037]" style="background: rgb(27, 27, 32);"><img data-template-id="project-image-2" class="canva-image thumbnail block w-full object-cover" loading="lazy" src="https://images.pexels.com/photos/7915437/pexels-photo-7915437.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="Gaming setup placeholder for Gorilla Tag Edit 1">
+       <div class="p-5">
+        <h3 data-template-id="project-title-2" class="canva-text font-semibold" style="color: rgb(243, 241, 246); font-weight: 600; font-style: normal; font-size: 19px;">Gorilla Tag Edit 1</h3><a data-template-id="project-link-2" class="canva-link video-link mt-4 inline-block font-medium" href="https://www.tiktok.com/@evveen__/video/7639038924584783126" target="_blank" rel="noopener noreferrer" style="color: rgb(173, 147, 255); font-weight: 500; font-style: normal; font-size: 16px;">View video</a>
+       </div>
+      </article>
+      <article data-template-id="project-card-3" class="canva-card project-card overflow-hidden rounded-2xl border border-[#303037]" style="background: rgb(27, 27, 32);"><img data-template-id="project-image-3" class="canva-image thumbnail block w-full object-cover" loading="lazy" src="https://images.pexels.com/photos/3165335/pexels-photo-3165335.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="Gaming equipment placeholder for Gorilla Tag Edit 2">
+       <div class="p-5">
+        <h3 data-template-id="project-title-3" class="canva-text font-semibold" style="color: rgb(243, 241, 246); font-weight: 600; font-style: normal; font-size: 19px;">Gorilla Tag Edit 2</h3><a data-template-id="project-link-3" class="canva-link video-link mt-4 inline-block font-medium" href="https://www.youtube.com/shorts/VPF_aCvbH8g" target="_blank" rel="noopener noreferrer" style="color: rgb(173, 147, 255); font-weight: 500; font-style: normal; font-size: 16px;">View video</a>
+       </div>
+      </article>
+      <article data-template-id="project-card-4" class="canva-card project-card overflow-hidden rounded-2xl border border-[#303037]" style="background: rgb(27, 27, 32);"><img data-template-id="project-image-4" class="canva-image thumbnail block w-full object-cover" loading="lazy" src="https://images.pexels.com/photos/3945683/pexels-photo-3945683.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="Colorful gaming desk placeholder for Roblox short-form edits">
+       <div class="p-5">
+        <h3 data-template-id="project-title-4" class="canva-text font-semibold" style="color: rgb(243, 241, 246); font-weight: 600; font-style: normal; font-size: 19px;">Roblox short-form edits</h3><a data-template-id="project-link-4" class="canva-link video-link mt-4 inline-block font-medium" href="https://www.tiktok.com/@evveen_/video/7553695307444407574" target="_blank" rel="noopener noreferrer" style="color: rgb(173, 147, 255); font-weight: 500; font-style: normal; font-size: 16px;">View video</a>
+       </div>
+      </article>
+      <article data-template-id="project-card-5" class="canva-card project-card overflow-hidden rounded-2xl border border-[#303037]" style="background: rgb(27, 27, 32);"><img data-template-id="project-image-5" class="canva-image thumbnail block w-full object-cover" loading="lazy" src="https://images.pexels.com/photos/274506/pexels-photo-274506.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="Football on a pitch placeholder for Football Edit 1">
+       <div class="p-5">
+        <h3 data-template-id="project-title-5" class="canva-text font-semibold" style="color: rgb(243, 241, 246); font-weight: 600; font-style: normal; font-size: 19px;">Football Edit 1</h3><a data-template-id="project-link-5" class="canva-link video-link mt-4 inline-block font-medium" href="https://www.tiktok.com/@3836ee/video/7661939530743942402" target="_blank" rel="noopener noreferrer" style="color: rgb(173, 147, 255); font-weight: 500; font-style: normal; font-size: 16px;">View video</a>
+       </div>
+      </article>
+      <article data-template-id="project-card-6" class="canva-card project-card overflow-hidden rounded-2xl border border-[#303037]" style="background: rgb(27, 27, 32);"><img data-template-id="project-image-6" class="canva-image thumbnail block w-full object-cover" loading="lazy" src="https://images.pexels.com/photos/46798/the-ball-stadion-football-the-pitch-46798.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="Football stadium placeholder for Football Edit 2">
+       <div class="p-5">
+        <h3 data-template-id="project-title-6" class="canva-text font-semibold" style="color: rgb(243, 241, 246); font-weight: 600; font-style: normal; font-size: 19px;">Football Edit 2</h3><a data-template-id="project-link-6" class="canva-link video-link mt-4 inline-block font-medium" href="https://www.tiktok.com/@3836ee/video/7660727238115036438" target="_blank" rel="noopener noreferrer" style="color: rgb(173, 147, 255); font-weight: 500; font-style: normal; font-size: 16px;">View video</a>
+       </div>
+      </article>
+     </div>
+    </div>
+   </section>
+   <section id="services" class="section-space border-t border-[#303037]">
+    <div class="site-width">
+     <h2 data-template-id="services-heading" class="canva-text mb-10 font-bold tracking-[-.035em]" style="color: rgb(243, 241, 246); font-weight: 700; font-style: normal; font-size: 24px;">Services</h2>
+     <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+      <div data-template-id="service-card-1" class="canva-card service-card rounded-2xl border border-[#303037] p-6" style="background: rgb(27, 27, 32);">
+       <h3 data-template-id="service-title-1" class="canva-text font-semibold leading-snug" style="color: rgb(243, 241, 246); font-weight: 600; font-style: normal; font-size: 19px;">Long-form YouTube editing</h3>
+      </div>
+      <div data-template-id="service-card-2" class="canva-card service-card rounded-2xl border border-[#303037] p-6" style="background: rgb(27, 27, 32);">
+       <h3 data-template-id="service-title-2" class="canva-text font-semibold leading-snug" style="color: rgb(243, 241, 246); font-weight: 600; font-style: normal; font-size: 19px;">Short-form editing</h3>
+      </div>
+      <div data-template-id="service-card-3" class="canva-card service-card rounded-2xl border border-[#303037] p-6" style="background: rgb(27, 27, 32);">
+       <h3 data-template-id="service-title-3" class="canva-text font-semibold leading-snug" style="color: rgb(243, 241, 246); font-weight: 600; font-style: normal; font-size: 19px;">Gaming content</h3>
+      </div>
+      <div data-template-id="service-card-4" class="canva-card service-card rounded-2xl border border-[#303037] p-6" style="background: rgb(27, 27, 32);">
+       <h3 data-template-id="service-title-4" class="canva-text font-semibold leading-snug" style="color: rgb(243, 241, 246); font-weight: 600; font-style: normal; font-size: 19px;">Football edits</h3>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section id="contact" class="section-space border-t border-[#303037]">
+    <div class="site-width py-8">
+     <h2 data-template-id="contact-heading" class="canva-text font-bold tracking-[-.045em]" style="color: rgb(243, 241, 246); font-weight: 700; font-style: normal; font-size: 48px;">Let's work together</h2><a data-template-id="contact-email" class="canva-link contact-link mt-7 inline-block break-all font-medium" href="mailto:evveeneditor@gmail.com" style="color: rgb(173, 147, 255); font-weight: 500; font-style: normal; font-size: 22px;">evveeneditor@gmail.com ↗</a>
+    </div>
+   </section>
+  </main>
+  <footer class="border-t border-[#303037]">
+   <div class="site-width flex flex-wrap items-center justify-between gap-4 py-8"><span data-template-id="footer-wordmark" class="canva-text font-bold tracking-[.18em]" style="color: rgb(243, 241, 246); font-weight: 700; font-style: normal; font-size: 16px;">EVVEEN</span> <a data-template-id="footer-email" class="canva-link quiet-link" href="mailto:evveeneditor@gmail.com" style="color: rgb(169, 167, 176); font-weight: 400; font-style: normal; font-size: 16px;">evveeneditor@gmail.com</a>
+   </div>
+  </footer>
+ 
+</body></html>
